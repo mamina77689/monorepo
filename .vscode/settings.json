@@ -1,0 +1,14 @@
+{
+  "typescript.preferences.importModuleSpecifierEnding": "index",
+  "javascript.preferences.importModuleSpecifierEnding": "index",
+  "javascript.preferences.importModuleSpecifier": "project-relative",
+  "typescript.preferences.importModuleSpecifier": "project-relative",
+  "typescript.preferences.includePackageJsonAutoImports": "on",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/*/**": true,
+    "**/.nx/**": true
+  }
+}

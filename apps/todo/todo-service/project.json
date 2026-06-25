@@ -1,0 +1,32 @@
+{
+  "name": "todo-service",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/todo/todo-service/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project todo-service --web",
+  "targets": {
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "bun run --watch src/server.ts",
+        "cwd" : "apps/todo/todo-service"
+      }
+    },
+
+    "migrate":{
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "bun --bun run prisma migrate dev --name init",
+        "cwd" : "apps/todo/todo-service"
+      }
+    },
+        "generate":{
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "bunx --bun prisma generate",
+        "cwd" : "apps/todo/todo-service"
+      }
+    }
+  }
+}

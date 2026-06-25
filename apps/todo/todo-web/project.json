@@ -1,0 +1,9 @@
+{
+  "name": "todo-web",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/todo/todo-web",
+  "projectType": "application",
+  "targets": {
+
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "moduleResolution": "bundler",
+    "ignoreDeprecations": "6.0",
+    "resolvePackageJsonImports": true,
+    "target": "es2024",
+    "module": "esnext",
+    "skipLibCheck": true,
+    "paths": {
+      "@khulan-v2-monorepo/shadcn": ["./libs/shared/shadcn/src/index.ts"],
+      "@khulan-v2-monorepo/shadcn/utils": [
+        "./libs/shared/shadcn/src/lib/utils.ts"
+      ],
+      "@khulan-v2-monorepo/shadcn/ui": ["./src/ui"],
+      "@khulan-v2-monorepo/shadcn/lib": ["./libs/shared/shadcn/src/lib"],
+      "@khulan-v2-monorepo/shadcn/hooks": ["./libs/shared/shadcn/src/hooks"],
+      "@khulan-v2-monorepo/todo-service": [
+        "./apps/todo/todo-service/src/index.ts"
+      ],
+      "@khulan-v2-monorepo/school-funding-service": [
+        "./apps/school-funding/school-funding-service/src/index.ts"
+      ]
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}
